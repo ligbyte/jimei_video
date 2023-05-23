@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#F8F6F9"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:id="@+id/fl_header"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="#EC695D">
+
+    <ImageView
+      android:scaleType="fitXY"
+      android:layout_width="match_parent"
+      android:layout_gravity="bottom"
+      android:src="@mipmap/bg_slice"
+      android:layout_height="wrap_content"/>
+
+    <ImageView
+      android:id="@+id/iv_avatar"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_gravity="center"
+      android:src="@mipmap/avatar_default" />
+
+    <TextView
+      android:id="@+id/tv_userinfo_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="80dp"
+      android:src="@mipmap/girl_icon"
+      android:text="未登录"
+      android:textColor="#ffffff"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+  </FrameLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/fl_header"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="#ffffff">
+
+    <ImageView
+      android:id="@+id/iv_left_icon"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_margin="10dp"
+      android:src="@mipmap/tost_icon" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/iv_left_icon"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/tv_status_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#333333" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/tv_register"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/select_text_register"
+      android:paddingLeft="17dp"
+      android:paddingTop="7dp"
+      android:paddingRight="17dp"
+      android:paddingBottom="7dp"
+      android:text="去激活"
+      android:textColor="#ffffff" />
+
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/tv_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="37dp"
+    android:layout_marginRight="37dp"
+    android:layout_marginBottom="80dp"
+    android:background="@drawable/select_text_ok"
+    android:gravity="center"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:text="去登录"
+    android:textColor="#ffffff" />
+
+</RelativeLayout>
+

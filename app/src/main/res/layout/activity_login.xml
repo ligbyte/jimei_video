@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:src="@mipmap/common_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="90dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="集美剪辑"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17sp"
+        android:layout_marginTop="56dp"
+        android:text="手机号验证登录"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_text" />
+
+
+    <EditText
+        android:id="@+id/et_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/input_text"
+        android:drawableLeft="@mipmap/icon_phone"
+        android:drawablePadding="12dp"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/input_text"
+        android:drawableLeft="@mipmap/icon_pass"
+        android:drawablePadding="12dp"
+        android:hint="请输入短信验证码"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="12dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_telephone" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="40dp"
+        android:text="获取短信验证码"
+        android:textColor="#EB5B60"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_telephone" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="30dp"
+        android:background="#DCDCDC"
+        app:layout_constraintRight_toLeftOf="@+id/tv_timer"
+        app:layout_constraintTop_toBottomOf="@+id/et_telephone" />
+
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/un_select"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="18dp"
+        android:includeFontPadding="false"
+        android:text="首次登录会自动创建新账号，并代表同意"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="《用户服务协议》"
+        android:includeFontPadding="false"
+        android:textColor="#EB5B60"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_down"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginTop="18dp"
+        android:text="和"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_user"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_user_two"
+        android:layout_width="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="《隐私政策》"
+        android:textColor="#EB5B60"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_split"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/select_text_ok"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="去登录"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/tv_down" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

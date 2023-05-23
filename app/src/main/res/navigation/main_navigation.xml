@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main_navigation"
+  app:startDestination="@+id/iv_home">
+
+  <fragment
+    android:id="@+id/iv_home"
+    android:name="com.collect_beautiful_video.fragment.MainFragment"
+    tools:layout="@layout/fragment_home" />
+
+  <fragment
+    android:id="@+id/iv_mine"
+    android:name="com.collect_beautiful_video.fragment.MineFragment"
+    tools:layout="@layout/fragment_mine" />
+
+</navigation>
+

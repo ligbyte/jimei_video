@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Colloect_beautiful_video" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+
+    </style>
+
+  <style name="CustomActionBarTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <item name="android:actionBarStyle">@style/myActionBar</item>
+  </style>
+
+  <style name="myActionBar" parent="android:Widget.ActionBar">
+    <item name="android:background">#ffffff</item>
+    <item name="backgroundColor">#ffffff</item>
+    <item name="android:titleTextStyle">@style/actionbar_titleTextStyle</item>
+  </style>
+
+  <style name="actionbar_titleTextStyle">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">#333333</item>
+  </style>
+</resources>
