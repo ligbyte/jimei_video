@@ -170,7 +170,7 @@ public class ManagerVideoActivity extends FragmentActivity {
       @Override
       public void onClick(int status) {
         if (status == 1) {
-          FFmpegCmdUtil.clear(60d);
+          FFmpegCmdUtil.clear(50d);
         } else {
           FFmpegCmdUtil.unClear();
         }

@@ -25,7 +25,7 @@ import io.microshow.rxffmpeg.RxFFmpegInvoke;
 import io.microshow.rxffmpeg.RxFFmpegSubscriber;
 
 public class FFmpegCmdUtil {
-
+  final static String TAG ="FFmpegCmdUtil";
   public static final String CMD_CHANGE_BACKGROUND = "CMD_CHANGE_BACKGROUND";
   public static final String CMD_DIM_BACKGROUND = "CMD_DIM_BACKGROUND";
   public static final String CMD_CLEAR = "CMD_CLEAR";
@@ -368,6 +368,7 @@ public class FFmpegCmdUtil {
 
   private static void startProcess(String key, ProcessListener processListener) {
     try {
+      Log.d(TAG, "startProcess cmdExcString: " + cmdExcString);
       RxFFmpegInvoke.getInstance()
         .runCommandRxJava(cmdExcString.split(" "))
         .subscribe(new CollectRxFFmpegSubscriber() {

@@ -91,6 +91,5 @@ dependencies {
   implementation  'com.umeng.umsdk:asms:1.4.1'
   implementation 'com.umeng.umsdk:apm:1.5.2'
   implementation 'org.greenrobot:eventbus:3.1.1'
-//  implementation 'com.github.xushihai:MediaPicker:v3.10'
-  implementation(name: 'mediapicker', ext: 'aar')
+  implementation 'com.github.ligbyte:mediapicker:1.1.0'
 }

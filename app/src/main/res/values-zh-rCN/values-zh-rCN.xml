@@ -5,7 +5,7 @@
     <string name="all_image">所有图片</string>
     <string name="all_video">所有视频</string>
     <string name="btn_ok">确定</string>
-    <string name="btn_send">发送</string>
+    <string name="btn_send">确定</string>
     <string name="edit">编辑</string>
     <string name="error_camera_title">提示</string>
     <string name="error_no_camera">检测到当前手机没有摄像头</string>
@@ -18,7 +18,7 @@
     <string name="preview_multi">预览(%d)</string>
     <string name="select_max_sum">你最多只能选择%1$d张图片或视频</string>
     <string name="select_media">选择</string>
-    <string name="send_multi">发送(%1$d/%2$d)</string>
+    <string name="send_multi">确定(%1$d/%2$d)</string>
     <string name="toast_save">已保存到系统相册</string>
     <string name="total_play_error">播放出错</string>
 </resources>

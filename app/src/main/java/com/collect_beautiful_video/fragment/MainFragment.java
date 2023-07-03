@@ -42,15 +42,14 @@ import com.collect_beautiful_video.util.FileUtil;
 import com.collect_beautiful_video.util.ScreenUtils;
 import com.collect_beautiful_video.util.UserInfoUtils;
 import com.collect_beautiful_video.view.VideoCropView;
-import com.hai.mediapicker.entity.Photo;
-import com.hai.mediapicker.util.GalleryFinal;
+import com.cy.mediapicker.entity.Photo;
+import com.cy.mediapicker.util.GalleryFinal;
 import com.hjq.toast.ToastUtils;
 import com.lxj.xpopup.XPopup;
 import com.lxj.xpopup.core.BasePopupView;
 import com.lxj.xpopup.impl.LoadingPopupView;
 import com.lxj.xpopup.interfaces.SimpleCallback;
 import com.yhd.mediaplayer.MediaPlayerHelper;
-import com.lcw.library.imagepicker.ImagePicker;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

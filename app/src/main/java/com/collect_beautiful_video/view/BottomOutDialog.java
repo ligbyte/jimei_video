@@ -95,7 +95,7 @@ public class BottomOutDialog extends BottomPopupView {
 
     public int getOne() {
         SharedPreferences sharedPreferences = mContext.getSharedPreferences("collect_beautiful", Context.MODE_PRIVATE);
-        return sharedPreferences.getInt("FPS_ONE", 2);
+        return sharedPreferences.getInt("FPS_ONE", 3);
     }
 
     public int getTwo() {
